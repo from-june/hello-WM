@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0 1.5rem;
+  font-family: $font-main;
+  color: $color-text;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
