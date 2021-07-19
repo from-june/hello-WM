@@ -59,10 +59,70 @@
     background-color: $color-btn;
     transform: translateY(-0.7rem) rotate(135deg);
   }
+
+  &__box {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 25rem;
+    height: 100vh;
+    background-color: $color-white;
+    border-bottom-right-radius: 3px;
+    z-index: 10;
+
+    transform: translateX(-25rem);
+    transition: transform 0.5s;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2rem 2rem;
+    margin-left: 2rem;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 2rem 1.5rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    color: $color-grey;
+
+    &:hover,
+    &--active {
+      color: $color-primary;
+    }
+  }
+
+  &__bar:hover ~ .navigation__box {
+    transform: translateX(0);
+  }
+}
+
+.nav__home {
+  position: absolute;
+  top: 0.2rem;
+  left: 6.5rem;
+  width: 2rem;
+  height: 2rem;
+  fill: $color-primary;
 }
 
 .logo {
   display: block;
   width: 4.5rem;
   height: auto;
+  cursor: pointer;
 }
