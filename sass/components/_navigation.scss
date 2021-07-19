@@ -1,0 +1,68 @@
+.navigation {
+  width: 100%;
+  height: 7rem;
+  background-color: $color-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__bar {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 2rem;
+
+    cursor: pointer;
+  }
+
+  &__stick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 1px;
+    background-color: $color-primary;
+    border-radius: 3px;
+
+    backface-visibility: hidden;
+    transition: all 0.3s;
+
+    &--1 {
+      top: 0.5rem;
+    }
+
+    &--2 {
+      top: 1.2rem;
+    }
+
+    &--3 {
+      top: 1.9rem;
+    }
+  }
+
+  // DOT: Nav bar ANIMATIOn
+  &__bar:hover &__stick--1 {
+    background-color: $color-btn;
+    transform: translateY(0.7rem) rotate(-135deg);
+  }
+
+  &__bar:hover &__stick--2 {
+    left: 50%;
+    opacity: 0;
+    animation: active-nav-bar 0.8s forwards;
+  }
+
+  &__bar:hover &__stick--3 {
+    background-color: $color-btn;
+    transform: translateY(-0.7rem) rotate(135deg);
+  }
+}
+
+.logo {
+  display: block;
+  width: 4.5rem;
+  height: auto;
+}
