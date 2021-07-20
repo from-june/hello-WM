@@ -1,0 +1,27 @@
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 5.5rem;
+  margin-bottom: 3rem;
+
+  font-family: $font-en;
+  font-size: 5.6rem;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+  color: $color-text;
+
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    display: block;
+    content: '';
+    width: 170%;
+    height: 1.5rem;
+    background-color: $color-primary;
+
+    z-index: -1;
+  }
+}
