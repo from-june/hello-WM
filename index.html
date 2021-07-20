@@ -20,29 +20,28 @@
   <body>
     <header class="header">
       <div class="navigation">
-        <div class="navigation__bar">
+        <div class="navigation__bar ">
           <span class="navigation__stick navigation__stick--1"></span>
           <span class="navigation__stick navigation__stick--2"></span>
           <span class="navigation__stick navigation__stick--3"></span>
         </div>
-
         <nav class="navigation__box">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="" class="navigation__link navigation__link--active">Home <svg class="nav__home"><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
+              <a href="/" class="navigation__link navigation__link--active">Home <svg class="nav__home"><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
 							</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link">About</a>
+              <a href="#about" class="navigation__link">About</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link">Artist</a>
+              <a href="#" class="navigation__link">Artists</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link">New Album</a>
+              <a href="#" class="navigation__link">Releases</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link">Audition</a>
+              <a href="#" class="navigation__link">Audition</a>
             </li>
           </ul>
         </nav>
@@ -56,9 +55,33 @@
           <h1 class="header__title">
             <span class="header__title">Hello WM</span>
           </h1>
-          <a href="#" class="btn header__btn">About more</a>
+          <a href="#about" class="btn header__btn">About more</a>
         </div>
       </div>
     </header>
+
+		<main>
+			<section class="about" id="about">
+				<h1 class="section-title">About</h1>
+				<div class="about__content">
+					<img src="./img/makestar-wm.jpg" alt="WM Artists" class="about__image">
+					<div class="about__textbox">
+						<h3 class="about__textbox--title">
+							Make star
+						</h3>
+						<p class="about__textbox--paragraph">원석은 저마다의 색과 개성이 존재하는데<br />그것을 발견하고 가치있는 보석으로 만들기 위해<br /> 이 곳은 존재한다</p>
+					</div>
+				</div>
+				<div class="about__description">	
+					<div class="about__info">
+						<p class="about__detail">
+							<span class="about__detail--emph">WM Entertainment</span>는<br />각 분야 최고의 전문가들이 주축이 되어 진취적인 마인드와 체계적인 시스템으로 엔터테인먼트의 새로운 패러다임을 제시합니다. 잠재력 있는 참신한 인재를 발굴하고 체계적이고 전문화된
+							시스템으로, 우수한 아티스트로 성장시켜 아시아는 물론 세계화를 목표로 글로벌 시대에 발맞추어 나가겠습니다.
+							</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
   </body>
 </html>
