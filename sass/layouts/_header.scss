@@ -21,7 +21,7 @@
   }
   &__title {
     display: inline-block;
-    font-family: $font-heading;
+    font-family: $font-en;
     font-size: 7.5rem;
     font-weight: 200;
     letter-spacing: 3rem;
@@ -30,7 +30,7 @@
     transition: all 0.3s;
 
     &:hover {
-      animation: header-title 1.5s;
+      animation: header-title 1s;
     }
   }
 }
