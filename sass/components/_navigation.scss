@@ -2,6 +2,7 @@
   width: 100%;
   height: 7rem;
   background-color: $color-white;
+  z-index: 5;
 
   display: flex;
   justify-content: center;
@@ -125,4 +126,9 @@
   width: 4.5rem;
   height: auto;
   cursor: pointer;
+}
+
+.navigation.sticky {
+  position: fixed;
+  background-color: rgba($color-white, 0.9);
 }
