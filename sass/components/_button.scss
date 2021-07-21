@@ -7,7 +7,7 @@
   text-transform: lowercase;
   font-family: $font-en;
   font-size: 1.8rem;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.8rem;
   color: $color-white;
   transition: transform 0.2s;
 
@@ -18,4 +18,9 @@
   &:active {
     transform: translateY(-0.2rem);
   }
+}
+
+.btn--artists {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
 }
