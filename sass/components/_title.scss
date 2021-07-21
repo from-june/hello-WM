@@ -25,3 +25,9 @@
     z-index: -1;
   }
 }
+
+.section-title.artists__title {
+  &::after {
+    background-color: #fff;
+  }
+}
