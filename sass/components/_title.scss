@@ -28,6 +28,13 @@
 
 .section-title.artists__title {
   &::after {
-    background-color: #fff;
+    background-color: $color-white;
   }
+}
+
+.footer-title {
+  font-family: $font-en;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+  color: rgba($color-white, 0.8);
 }
