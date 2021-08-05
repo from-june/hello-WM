@@ -1,0 +1,48 @@
+.audition {
+  padding: 6rem 0;
+  background-color: $color-bgc;
+
+  &__content {
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__textbox {
+    align-self: end;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) min-content;
+    row-gap: 1rem;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+    font-size: 4rem;
+    letter-spacing: -0.1em;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+
+    span {
+      font-family: $font-en;
+      font-size: 1.8rem;
+      font-weight: 200;
+      color: $color-primary;
+    }
+  }
+
+  &__btn {
+    width: max-content;
+    margin-top: 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
