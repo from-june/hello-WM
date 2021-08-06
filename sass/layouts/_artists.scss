@@ -2,16 +2,28 @@
   padding: 7rem 0;
   background-color: $color-primary;
 
+  @media screen and (max-width: $bp-7) {
+    padding: 4rem 0;
+  }
+
   &__list {
     padding: 2rem 2.5rem;
 
-    @include flexbox(space-between, center);
+    @include flexbox(space-evenly, center);
+
+    @media screen and (max-width: $bp-7) {
+      @include flexbox(center, center, column);
+    }
   }
 
   &__group {
     position: relative;
     width: 30%;
     height: auto;
+
+    @media screen and (max-width: $bp-7) {
+      width: 80%;
+    }
 
     & figcaption {
       position: absolute;
@@ -21,6 +33,10 @@
       text-align: center;
       opacity: 0;
       transition: all 0.5s;
+
+      @media screen and (max-width: $bp-8) {
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
@@ -57,6 +73,10 @@
 
     & a:not(:last-child) {
       margin-right: 0.7rem;
+
+      @media screen and (max-width: $bp-8) {
+        margin-right: 0.3rem;
+      }
     }
   }
 

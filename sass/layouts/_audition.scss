@@ -2,12 +2,20 @@
   padding: 6rem 0;
   background-color: $color-bgc;
 
+  @media screen and (max-width: $bp-7) {
+    padding: 4rem 0;
+  }
+
   &__content {
     padding: 3rem;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+
+    @media screen and (max-width: $bp-6) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__textbox {
@@ -16,12 +24,20 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr) min-content;
     row-gap: 1rem;
+
+    @media screen and (max-width: $bp-6) {
+      border-top: 1px solid $color-border;
+    }
   }
 
   &__subtitle {
     color: $color-primary;
     font-size: 4rem;
     letter-spacing: -0.1em;
+
+    @media screen and (max-width: $bp-6) {
+      margin-top: 2rem;
+    }
   }
 
   &__text {
@@ -39,10 +55,18 @@
   &__btn {
     width: max-content;
     margin-top: 5rem;
+
+    @media screen and (max-width: $bp-6) {
+      margin-top: 2rem;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @media screen and (max-width: $bp-6) {
+      order: -1;
+    }
   }
 }
