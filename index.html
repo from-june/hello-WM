@@ -14,14 +14,14 @@
 
     <link rel="shortcut icon" href="img/logo-WM.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="./js/index.js"></script>
+    <script defer src="script.js"></script>
     <title>Hello WM</title>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="navigation">
-        <div class="navigation__bar ">
+        <div class="navigation__bar">
           <span class="navigation__stick navigation__stick--1"></span>
           <span class="navigation__stick navigation__stick--2"></span>
           <span class="navigation__stick navigation__stick--3"></span>
@@ -29,20 +29,20 @@
         <nav class="navigation__box">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="/" class="navigation__link navigation__link--active">Home <svg class="nav__home"><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
+              <a href="#header" class="navigation__link navigation__link--active">Home <svg class="nav__home"><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
 							</a>
             </li>
             <li class="navigation__item">
               <a href="#about" class="navigation__link">About</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Artists</a>
+              <a href="#artists" class="navigation__link">Artists</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Releases</a>
+              <a href="#releases" class="navigation__link">Releases</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Audition</a>
+              <a href="#audition" class="navigation__link">Audition</a>
             </li>
           </ul>
         </nav>
@@ -52,12 +52,12 @@
       </div>
 
       <div class="header__intro">
-      </div>
-      <div class="header__text">
-        <h1 class="header__title">
-          Hello WM
-        </h1>
-        <a href="#about" class="btn header__btn">&nbsp;about more</a>
+        <div class="header__text">
+          <h1 class="header__title">
+            Hello WM
+          </h1>
+          <a href="#about" class="btn header__btn">&nbsp;about more</a>
+        </div>
       </div>
     </header>
 
@@ -88,7 +88,7 @@
         </div>
       </section>
 
-      <section class="artists section">
+      <section class="artists section" id="artists">
         <h1 class="artists__title section-title">Artists</h1>
         <ul class="artists__list">
           <li class="artists__group">
@@ -139,7 +139,7 @@
         </ul>
       </section>
 
-      <section class="releases section">
+      <section class="releases section" id="releases">
         <h1 class="section-title">Releases</h1>
         <div class="releases__box">
           <ul class="releases__list">
@@ -194,12 +194,12 @@
             </li>
           </ul>
         </div>
-        <div class="pagination">
-          <span class="page-1"></span>
+        <div class="carousel">
+          <span class="slide-1"></span>
         </div>
       </section>
 
-      <section class="audition section">
+      <section class="audition section" id="audition">
         <h1 class="section-title">Audition</h1>
         <div class="audition__content">
           <div class="audition__textbox">
