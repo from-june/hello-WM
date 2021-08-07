@@ -1,4 +1,5 @@
 @import './constants/colors';
+@import './constants/effect';
 @import './constants/typography';
 @import './constants/mediaquery';
 
@@ -7,6 +8,7 @@
 @import './base/mixins';
 
 @import './components/button';
+@import './components/modal';
 @import './components/navigation';
 @import './components/slider';
 @import './components/title';

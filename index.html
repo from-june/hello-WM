@@ -14,6 +14,7 @@
 
     <link rel="shortcut icon" href="img/logo-WM.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/index.js"></script>
     <title>Hello WM</title>
   </head>
 
@@ -61,7 +62,7 @@
     </header>
 
     <main>
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <h1 class="section-title">About</h1>
         <div class="about__content">
           <img src="./img/makestar-wm.jpg" alt="WM Artists" class="about__image">
@@ -87,7 +88,7 @@
         </div>
       </section>
 
-      <section class="artists">
+      <section class="artists section">
         <h1 class="artists__title section-title">Artists</h1>
         <ul class="artists__list">
           <li class="artists__group">
@@ -138,64 +139,64 @@
         </ul>
       </section>
 
-      <section class="releases">
+      <section class="releases section">
         <h1 class="section-title">Releases</h1>
         <div class="releases__box">
           <ul class="releases__list">
-            <li class="releases__item">
-              <img src="img/onf-popping.GIF" alt="온앤오프 썸머팝업 앨범" class="releases__img releases__img--1">
-              <div class="releases__content">
+            <li class="releases__item releases__item--1">
+              <img src="img/onf-popping.GIF" alt="온앤오프 썸머팝업 앨범" class="releases__img">
+              <div class="releases__content active">
                 <p class="releases__text">ONF Summer Popup Album</p>
                 <strong>POPPING</strong>
               </div>
             </li>
-            <li class="releases__item">
-              <img src="img/new-dearomg.jpeg" alt="오마이걸 8번째 미니 앨범" class="releases__img releases__img--1">
+            <li class="releases__item releases__item--2">
+              <img src="img/new-dearomg.jpeg" alt="오마이걸 8번째 미니 앨범" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">OH MY GIRL The 8th Mini Album</p>
                 <strong>Dear OHMYGIRL</strong>
               </div>
             </li>
-            <li class="releases__item">
-              <img src="img/new-cityofonf.jpeg" alt="온앤오프 정규 1집 리패키지 앨범" class="releases__img releases__img--2">
+            <li class="releases__item releases__item--3">
+              <img src="img/new-cityofonf.jpeg" alt="온앤오프 정규 1집 리패키지 앨범" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">ONF The 1st Album Repackage</p>
                 <strong>CITY OF ONF</strong>
               </div>
             </li>
-            <!-- <li class="releases__item">
-              <img src="img/onf-myname.jpeg" alt="온앤오프 정규 1집 앨범" class="releases__img releases__img--3">
+            <li class="releases__item releases__item--4">
+              <img src="img/onf-myname.jpeg" alt="온앤오프 정규 1집 앨범" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">ONF The 1st album</p>
                 <strong>ONF: MY NAME</strong>
               </div>
             </li>
-            <li class="releases__item">
-              <img src="img/new-10times.jpeg" alt="비원에이포 10주년 기념 디지털 싱글" class="releases__img releases__img--4">
+            <li class="releases__item releases__item--5">
+              <img src="img/new-10times.jpeg" alt="비원에이포 10주년 기념 디지털 싱글" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">B1A4 10th Anniversary Digital Single</p>
                 <strong>10 Times</strong>
               </div>
             </li>
-            <li class="releases__item">
-              <img src="img/b1a4-origine.jpeg" alt="비원에이포 정규 4집 앨범" class="releases__img releases__img--5">
+            <li class="releases__item releases__item--6">
+              <img src="img/b1a4-origine.jpeg" alt="비원에이포 정규 4집 앨범" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">B1A4 The 4th album</p>
                 <strong>Origine</strong>
               </div>
             </li>
-            <li class="releases__item">
-              <img src="img/Yooa-bonvoyage.jpeg" alt="유아 첫번째 미니 앨범" class="releases__img releases__img--6">
+            <li class="releases__item releases__item--7">
+              <img src="img/Yooa-bonvoyage.jpeg" alt="유아 첫번째 미니 앨범" class="releases__img">
               <div class="releases__content">
                 <p class="releases__text">Yooa The 1st mini album</p>
                 <strong>Bon Voyage</strong>
               </div>
-            </li> -->
+            </li>
           </ul>
         </div>
       </section>
 
-      <section class="audition">
+      <section class="audition section">
         <h1 class="section-title">Audition</h1>
         <div class="audition__content">
           <div class="audition__textbox">
@@ -226,5 +227,21 @@
         <span>designed by <strong>pak·FUSE</strong></span>
       </div>
     </footer>
+
+    <div class="overlay hidden"></div>
+
+    <div class="modal hidden">
+      <button type="button" class="modal__close">&times;</button>
+      <h2 class="modal-title">
+        오디션 지원하기<svg><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
+      </h2>
+      <form method="get" class="modal__form">
+        <input type="text" id="name" placeholder="이름"/>
+        <input type="text" id="age" placeholder="나이"/>
+        <input type="email" id="email" placeholder="이메일주소"/>
+        <button type="button" class="btn modal__button">submit</button>
+      </form>
+    </div>
+
   </body>
 </html>
