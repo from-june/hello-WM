@@ -2,12 +2,12 @@
   width: 100%;
   height: 7rem;
   background-color: $color-white;
-  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  @include flexbox(center, center);
 
   &__bar {
     width: 3rem;
@@ -52,19 +52,18 @@
     }
   }
 
-  // TODO: Nav bar ANIMATION
-  &__bar:hover &__stick--1 {
+  &__stick--1.active {
     background-color: $color-btn;
     transform: translateY(0.7rem) rotate(-135deg);
   }
 
-  &__bar:hover &__stick--2 {
+  &__stick--2.active {
     left: 50%;
     opacity: 0;
     animation: active-nav-bar 0.8s forwards;
   }
 
-  &__bar:hover &__stick--3 {
+  &__stick--3.active {
     background-color: $color-btn;
     transform: translateY(-0.7rem) rotate(135deg);
 
@@ -118,10 +117,6 @@
       color: $color-primary;
     }
   }
-
-  &__bar:hover ~ .navigation__box {
-    transform: translateX(0);
-  }
 }
 
 .nav__home {
@@ -142,5 +137,5 @@
 
 .navigation.sticky {
   position: fixed;
-  background-color: rgba($color-white, 0.9);
+  background-color: rgba($color-white, 0.95);
 }

@@ -1,5 +1,5 @@
 .releases {
-  padding: 7rem 0;
+  padding: 10rem 0;
 
   @media screen and (max-width: $bp-7) {
     padding: 4rem 0;
@@ -8,15 +8,16 @@
   &__box {
     display: flex;
     justify-content: center;
-    width: 100%;
-    overflow: hidden;
   }
 
   &__list {
-    display: flex;
+    @include flexbox(start, start, row);
+    width: 93rem;
+    overflow: hidden;
   }
 
   &__item {
+    transition: all 0.3s;
     &:not(:last-child) {
       margin-right: 12rem;
 
@@ -38,6 +39,7 @@
   &__content {
     @include flexbox(center, center, column);
     font-family: $font-en;
+    opacity: 0;
 
     & > strong {
       font-size: 3rem;
@@ -51,4 +53,8 @@
     font-size: 1.6rem;
     text-transform: capitalize;
   }
+}
+
+.active {
+  opacity: 1;
 }

@@ -1,5 +1,5 @@
 .artists {
-  padding: 7rem 0;
+  padding: 10rem 0;
   background-color: $color-primary;
 
   @media screen and (max-width: $bp-7) {
@@ -47,12 +47,14 @@
     transition: all 0.5s;
 
     // TODO: JavaScript
-    &:hover + figcaption {
+    &:hover + figcaption,
+    & > figcaption.active {
       opacity: 1;
       transform: translate(-50%, -20%);
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       filter: brightness(60%);
     }
   }
