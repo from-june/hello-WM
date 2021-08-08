@@ -54,4 +54,20 @@
     color: $color-primary;
     font-weight: 200;
   }
+
+  &--image {
+    @include flexbox(center, center);
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-primary;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
 }

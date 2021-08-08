@@ -30,7 +30,7 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#header" class="navigation__link navigation__link--active">Home <svg class="nav__home"><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
-							</a>
+              </a>
             </li>
             <li class="navigation__item">
               <a href="#about" class="navigation__link">About</a>
@@ -92,49 +92,43 @@
         <h1 class="artists__title section-title">Artists</h1>
         <ul class="artists__list">
           <li class="artists__group">
-            <figure>
-              <img src="./img/artist-b1a4.jpeg" alt="B1A4" class="artists__image">
-              <figcaption>
-                <strong class="artists__name">b1a4</strong>
-                <div class="artists__sns-box">
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
-                    <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-instagram-with-circle"></svg></a>
-                    <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-twitter-with-circle"></svg></a>
-                    <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-youtube-with-circle"></svg></a>
-                </div>
-                <a href="#" class="btn btn--artists">&nbsp;more</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="artists__group">
-            <figure>
-              <img src="./img/artist-omg.jpeg" alt="OH MY GIRL" class="artists__image">
-              <figcaption>
-                <strong class="artists__name">OH MY GIRL</strong>
-                <div class="artists__sns-box">
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
+            <img src="./img/artist-b1a4.jpeg" alt="B1A4" class="artists__image">
+            <div class="artists__content">
+              <strong class="artists__name">b1a4</strong>
+              <div class="artists__sns-box">
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
                   <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-instagram-with-circle"></svg></a>
                   <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-twitter-with-circle"></svg></a>
                   <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-youtube-with-circle"></svg></a>
-                </div>
-                <a href="#" class="btn btn--artists">&nbsp;more</a>
-              </figcaption>
-            </figure>
+              </div>
+              <a href="#" class="btn btn--artists">&nbsp;more</a>
+            </div>
           </li>
           <li class="artists__group">
-            <figure>
-              <img src="./img/artist-onf.jpeg" alt="ONF" class="artists__image">
-              <figcaption>
-                <strong class="artists__name">ONF</strong>
-                <div class="artists__sns-box">
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-instagram-with-circle"></svg></a>
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-twitter-with-circle"></svg></a>
-                  <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-youtube-with-circle"></svg></a>
-                </div>
-                <a href="#" class="btn btn--artists">&nbsp;more</a>
-              </figcaption>
-            </figure>
+            <img src="./img/artist-omg.jpeg" alt="OH MY GIRL" class="artists__image">
+            <div class="artists__content">
+              <strong class="artists__name">OH MY GIRL</strong>
+              <div class="artists__sns-box">
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-instagram-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-twitter-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-youtube-with-circle"></svg></a>
+              </div>
+              <a href="#" class="btn btn--artists">&nbsp;more</a>
+            </div>
+          </li>
+          <li class="artists__group">
+            <img src="./img/artist-onf.jpeg" alt="ONF" class="artists__image">
+            <div class="artists__content">
+              <strong class="artists__name">ONF</strong>
+              <div class="artists__sns-box">
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-facebook-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-instagram-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-twitter-with-circle"></svg></a>
+                <a href="#"><svg class="artists__sns"><use xlink:href="img/wm-icon/sprite.svg#icon-youtube-with-circle"></svg></a>
+              </div>
+              <a href="#" class="btn btn--artists">&nbsp;more</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -231,9 +225,9 @@
       </div>
     </footer>
 
-    <div class="overlay hidden"></div>
+    <div class="overlay"></div>
 
-    <div class="modal hidden">
+    <div class="modal">
       <button type="button" class="modal__close">&times;</button>
       <h2 class="modal-title">
         오디션 지원하기<svg><use xlink:href="img/wm-icon/sprite.svg#icon-emoji-flirt"></svg>
@@ -242,6 +236,10 @@
         <input type="text" id="name" placeholder="이름"/>
         <input type="text" id="age" placeholder="나이"/>
         <input type="email" id="email" placeholder="이메일주소"/>
+        <div class="modal--image">
+          <svg class="modal__icon"><use xlink:href="img/wm-icon/sprite.svg#icon-camera"></svg>
+          <span>이미지 업로드</span>
+        </div>
         <button type="button" class="btn modal__button">submit</button>
       </form>
     </div>
