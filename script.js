@@ -7,13 +7,13 @@ let show = true;
 
 const appearNav = function () {
   navBox.style.transform = 'translateX(0)';
-  navStick.forEach((stick) => stick.classList.add('active'));
+  navStick.forEach(stick => stick.classList.add('active'));
   show = false;
 };
 
 const disappearNav = function () {
   navBox.style.transform = 'translateX(-25rem)';
-  navStick.forEach((stick) => stick.classList.remove('active'));
+  navStick.forEach(stick => stick.classList.remove('active'));
   show = true;
 };
 
@@ -80,3 +80,24 @@ const headerObserver = new IntersectionObserver(headerObs, {
 });
 
 headerObserver.observe(header);
+
+// NOTE: Mouseenter and mouseleave event
+const artistLists = document.querySelectorAll('.artists__group');
+
+const mouseEvent = function (e) {
+  const group = e.target;
+  const imgs = group
+    .closest('.artists__group')
+    .querySelectorAll('.artists__image');
+  const contents = group
+    .closest('.artists__group')
+    .querySelectorAll('.artists__content');
+
+  imgs.forEach(img => img.classList.toggle('active'));
+  contents.forEach(content => content.classList.toggle('active'));
+};
+
+artistLists.forEach(list => {
+  list.addEventListener('mouseenter', mouseEvent);
+  list.addEventListener('mouseleave', mouseEvent);
+});

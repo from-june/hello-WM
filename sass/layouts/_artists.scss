@@ -24,19 +24,23 @@
     @media screen and (max-width: $bp-7) {
       width: 80%;
     }
+  }
 
-    & figcaption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 10%);
-      text-align: center;
-      opacity: 0;
-      transition: all 0.5s;
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
 
-      @media screen and (max-width: $bp-8) {
-        transform: translate(-50%, -50%);
-      }
+    @media screen and (max-width: $bp-8) {
+      transform: translate(-50%, -50%);
+    }
+    &.active {
+      opacity: 1;
+      transform: translate(-50%, -20%);
     }
   }
 
@@ -46,14 +50,6 @@
     padding: 1rem 0;
     transition: all 0.5s;
 
-    // TODO: JavaScript
-    &:hover + figcaption,
-    & > figcaption.active {
-      opacity: 1;
-      transform: translate(-50%, -20%);
-    }
-
-    &:hover,
     &.active {
       filter: brightness(60%);
     }
