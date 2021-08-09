@@ -1,17 +1,19 @@
-.carousel {
+.pagination {
   position: relative;
   margin: 0 auto;
   width: 90%;
   height: 1px;
   background-color: $color-border;
 
-  .slide-1 {
+  .slide {
     position: absolute;
     top: -0.5px;
-    left: 0;
     width: 12.8571428571%;
     height: 2px;
     background-color: $color-primary;
-    cursor: pointer;
+
+    &-first {
+      left: 0;
+    }
   }
 }
