@@ -3,7 +3,7 @@
   background-color: $color-bgc;
   position: relative;
 
-  @media screen and (max-width: $bp-7) {
+  @media only screen and (max-width: $bp-7) {
     padding: 7rem 0;
     background-color: $color-white;
   }
@@ -15,7 +15,7 @@
 
     @include flexbox(flex-end, start);
 
-    @media screen and (max-width: $bp-7) {
+    @media only screen and (max-width: $bp-7) {
       margin-bottom: 0;
     }
   }
@@ -23,7 +23,7 @@
   &__image {
     width: 92%;
 
-    @media screen and (max-width: $bp-8) {
+    @media only screen and (max-width: $bp-8) {
       width: 100%;
     }
   }
@@ -43,12 +43,12 @@
 
     @include flexbox(center, start, column);
 
-    @media screen and (max-width: $bp-8) {
+    @media only screen and (max-width: $bp-8) {
       background-color: transparent;
       color: $color-primary;
     }
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       visibility: hidden;
     }
 
@@ -86,7 +86,7 @@
       background-color: transparent;
     }
 
-    @media screen and (max-width: $bp-7) {
+    @media only screen and (max-width: $bp-7) {
       flex: 0 0 100%;
       background-color: transparent;
     }

@@ -51,7 +51,7 @@
     transition: all 0.5s;
 
     &.active {
-      filter: brightness(60%);
+      filter: brightness(70%);
     }
   }
 
@@ -86,12 +86,13 @@
 
   @media (hover: none) {
     &__content {
+      @include flexbox(center, center, column);
       opacity: 1;
       transform: translate(-50%, -20%);
     }
 
     &__image {
-      filter: brightness(70%);
+      filter: brightness(80%);
     }
 
     &__sns-box {

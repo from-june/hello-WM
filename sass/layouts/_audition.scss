@@ -2,7 +2,7 @@
   padding: 10rem 0;
   background-color: $color-bgc;
 
-  @media screen and (max-width: $bp-7) {
+  @media only screen and (max-width: $bp-7) {
     padding: 7rem 0;
   }
 
@@ -13,7 +13,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       grid-template-columns: 1fr;
     }
   }
@@ -25,7 +25,7 @@
     grid-template-rows: repeat(2, 1fr) min-content;
     row-gap: 1rem;
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       border-top: 1px solid $color-border;
     }
   }
@@ -35,7 +35,7 @@
     font-size: 4rem;
     letter-spacing: -0.1em;
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       margin-top: 2rem;
     }
   }
@@ -61,7 +61,7 @@
       transform: translateY(0);
     }
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       margin-top: 2rem;
     }
   }
@@ -70,7 +70,7 @@
     display: block;
     width: 100%;
 
-    @media screen and (max-width: $bp-6) {
+    @media only screen and (max-width: $bp-6) {
       order: -1;
     }
   }
