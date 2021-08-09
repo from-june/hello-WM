@@ -11,7 +11,7 @@
   }
 
   &__carousel {
-    display: flex;
+    @include flexbox(flex-start, flex-start);
     width: 100%;
     height: min-content;
     overflow: hidden;
