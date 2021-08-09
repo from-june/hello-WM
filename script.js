@@ -114,10 +114,9 @@ const SEC = 2000;
 const TRANSITION = 'all 0.7s ease-in-out';
 
 let index = 0;
-let startCarousel;
 
 const carouselEffet = function () {
-  startCarousel = setInterval(function () {
+  setInterval(function () {
     albumList.style.transform = 'translateX(-33.3333%)';
 
     if (screen600.matches) albumList.style.transform = 'translateX(-50%)';
@@ -147,6 +146,7 @@ albumList.addEventListener('transitionend', function () {
 });
 
 // // When a mouse enter and leave
+// let startCarousel;
 // carousel.addEventListener('mouseenter', function () {
 //   clearInterval(startCarousel);
 // });
