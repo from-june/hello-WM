@@ -101,3 +101,52 @@ artistLists.forEach(list => {
   list.addEventListener('mouseenter', mouseEvent);
   list.addEventListener('mouseleave', mouseEvent);
 });
+
+// NOTE: Infinity Carousel
+const carousel = document.querySelector('.releases__carousel');
+const albumList = document.querySelector('.releases__list');
+const page = document.querySelector('.slide');
+const albums = document.querySelectorAll('.releases__item');
+
+const screen600 = window.matchMedia('(max-width: 37.5em)');
+const screen400 = window.matchMedia('(max-width: 25em)');
+const SEC = 2000;
+const TRANSITION = 'all 0.7s ease-in-out';
+
+let index = 0;
+let startCarousel;
+
+const carouselEffet = function () {
+  startCarousel = setInterval(function () {
+    albumList.style.transform = 'translateX(-33.3333%)';
+
+    if (screen600.matches) albumList.style.transform = 'translateX(-50%)';
+    if (screen400.matches) albumList.style.transform = 'translateX(-100%)';
+
+    // Pagiantion
+    if (index >= albums.length - 1) {
+      index = 0;
+      page.style.transform = `translateX(0)`;
+    } else {
+      index++;
+      page.style.transition = TRANSITION;
+      page.style.transform = `translateX(${100 * index}%)`;
+    }
+  }, SEC);
+};
+
+albumList.addEventListener('transitionend', function () {
+  albumList.appendChild(albumList.firstElementChild);
+  albumList.style.transition = 'none';
+  albumList.style.transform = 'translateX(0)';
+
+  setTimeout(() => {
+    albumList.style.transition = TRANSITION;
+  });
+});
+
+// When a mouse enter and leave
+carousel.addEventListener('mouseenter', function () {
+  clearInterval(startCarousel);
+});
+carousel.addEventListener('mouseleave', carouselEffet);
