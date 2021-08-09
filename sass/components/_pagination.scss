@@ -8,12 +8,9 @@
   .slide {
     position: absolute;
     top: -0.5px;
-    width: 12.8571428571%;
+    left: 0;
+    width: 14.2857142857%;
     height: 2px;
     background-color: $color-primary;
-
-    &-first {
-      left: 0;
-    }
   }
 }
