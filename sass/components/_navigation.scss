@@ -87,9 +87,7 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexbox(space-between, start, column);
 
     padding: 2rem 2rem;
     margin-left: 2rem;
@@ -97,9 +95,10 @@
 
   &__item {
     display: inline-block;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 3.5rem 1.5rem 0.5rem;
     text-transform: capitalize;
-    font-size: 2rem;
+    font-family: $font-en;
+    font-size: 2.2rem;
     font-weight: 700;
 
     &:not(:last-child) {
