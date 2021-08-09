@@ -1,6 +1,7 @@
 // Class for JavaScript
 .section {
-  transition: all 1s;
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .section--hidden {
