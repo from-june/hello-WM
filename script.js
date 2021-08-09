@@ -146,8 +146,8 @@ albumList.addEventListener('transitionend', function () {
   });
 });
 
-// When a mouse enter and leave
-carousel.addEventListener('mouseenter', function () {
-  clearInterval(startCarousel);
-});
-carousel.addEventListener('mouseleave', carouselEffet);
+// // When a mouse enter and leave
+// carousel.addEventListener('mouseenter', function () {
+//   clearInterval(startCarousel);
+// });
+// carousel.addEventListener('mouseleave', carouselEffet);
