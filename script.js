@@ -134,6 +134,7 @@ const carouselEffet = function () {
     }
   }, SEC);
 };
+carouselEffet();
 
 albumList.addEventListener('transitionend', function () {
   albumList.appendChild(albumList.firstElementChild);
