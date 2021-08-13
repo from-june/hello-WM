@@ -21,6 +21,10 @@ navBar.addEventListener('click', function () {
   show ? appearNav() : disappearNav();
 });
 
+navBox.addEventListener('click', function (e) {
+  console.log(e.target);
+});
+
 // NOTE: Show and Close modal
 const btnSubmit = document.querySelector('.btn--audition');
 const btnClose = document.querySelector('.modal__close');
@@ -52,6 +56,8 @@ const sectionAbout = document.querySelector('.about');
 navLinks.addEventListener('click', function (e) {
   e.preventDefault();
   const id = e.target.getAttribute('href');
+  if (!id) return;
+
   document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 
   // Close Nav list
