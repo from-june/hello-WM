@@ -21,10 +21,6 @@ navBar.addEventListener('click', function () {
   show ? appearNav() : disappearNav();
 });
 
-navBox.addEventListener('click', function (e) {
-  console.log(e.target);
-});
-
 // NOTE: Show and Close modal
 const btnSubmit = document.querySelector('.btn--audition');
 const btnClose = document.querySelector('.modal__close');
@@ -150,13 +146,6 @@ albumList.addEventListener('transitionend', function () {
     albumList.style.transition = TRANSITION;
   });
 });
-
-// // When a mouse enter and leave
-// let startCarousel;
-// carousel.addEventListener('mouseenter', function () {
-//   clearInterval(startCarousel);
-// });
-// carousel.addEventListener('mouseleave', carouselEffet);
 
 // Reveal each section
 const allSections = document.querySelectorAll('.section');
