@@ -1,26 +1,3 @@
-// NOTE: Prevent NAV BAR
-const navStick = document.querySelectorAll('.navigation__stick');
-const navBar = document.querySelector('.navigation__bar');
-const navBox = document.querySelector('.navigation__box');
-
-let show = true;
-
-const appearNav = function () {
-  navBox.style.transform = 'translateX(0)';
-  navStick.forEach(stick => stick.classList.add('active'));
-  show = false;
-};
-
-const disappearNav = function () {
-  navBox.style.transform = 'translateX(-25rem)';
-  navStick.forEach(stick => stick.classList.remove('active'));
-  show = true;
-};
-
-navBar.addEventListener('click', function () {
-  show ? appearNav() : disappearNav();
-});
-
 // NOTE: Show and Close modal
 const btnSubmit = document.querySelector('.btn--audition');
 const btnClose = document.querySelector('.modal__close');
@@ -41,6 +18,32 @@ btnSubmit.addEventListener('click', showModal);
 btnClose.addEventListener('click', closeModal);
 overlay.addEventListener('click', function (e) {
   if (e.target !== modal) closeModal();
+  if (e.target !== navBox) disappearNav();
+});
+
+// NOTE: Prevent NAV BAR
+const navStick = document.querySelectorAll('.navigation__stick');
+const navBar = document.querySelector('.navigation__bar');
+const navBox = document.querySelector('.navigation__box');
+
+let show = true;
+
+const appearNav = function () {
+  navBox.style.transform = 'translateX(0)';
+  navStick.forEach(stick => stick.classList.add('active'));
+  overlay.classList.remove('hidden');
+  show = false;
+};
+
+const disappearNav = function () {
+  navBox.style.transform = 'translateX(-25rem)';
+  navStick.forEach(stick => stick.classList.remove('active'));
+  overlay.classList.add('hidden');
+  show = true;
+};
+
+navBar.addEventListener('click', function () {
+  show ? appearNav() : disappearNav();
 });
 
 // NOTE: Scroll To section
