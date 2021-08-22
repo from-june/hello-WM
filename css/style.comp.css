@@ -233,6 +233,9 @@ h3 {
   .navigation__stick--1.active {
     background-color: #c5c5c5;
     transform: translateY(0.7rem) rotate(-135deg); }
+    @media screen and (max-width: 62.5em) {
+      .navigation__stick--1.active {
+        transform: translateY(0.6rem) rotate(-135deg); } }
   .navigation__stick--2.active {
     left: 50%;
     opacity: 0;
